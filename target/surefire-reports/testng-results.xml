@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-04T23:04:57 BST" name="Suite" finished-at="2021-09-04T23:05:29 BST" duration-ms="31717">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.RunTest@209da20d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2021-09-04T23:04:57 BST" name="Test" finished-at="2021-09-04T23:05:29 BST" duration-ms="31717">
+      <class name="testRunners.RunTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testRunners.RunTest@209da20d]" started-at="2021-09-04T23:04:57 BST" name="setUpClass" finished-at="2021-09-04T23:04:58 BST" duration-ms="1254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.RunTest@209da20d]" started-at="2021-09-04T23:04:58 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-04T23:05:28 BST" duration-ms="30104" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Title of your scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Title of your feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy18.click(Unknown Source)
+at pages.HomePage.addProducts(HomePage.java:32)
+at stepDefinitions.Task1Steps.i_add_four_different_products_to_my_wish_list(Task1Steps.java:46)
+at ✽.I add four different products to my wish list(file:///C:/Users/Mathangi%20Hari/Codility/Codility/src/test/java/features/Task1.feature:24)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.RunTest@209da20d]" started-at="2021-09-04T23:05:28 BST" name="tearDownClass" finished-at="2021-09-04T23:05:29 BST" duration-ms="277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunners.RunTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
